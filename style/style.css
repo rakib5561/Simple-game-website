@@ -127,3 +127,14 @@ header{
     color: white;
     cursor: pointer;
 }
+
+/* Banner Responsive */
+@media only screen and (max-width: 600px) {
+    .banner-content{
+        flex-direction: column-reverse;
+    }
+    .banner-tilte {
+        padding: 60px 0px;
+    }
+
+}
