@@ -4,12 +4,10 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;;
 }
 .container{
-    max-width: 1180px;
+    max-width: 1280px;
     padding: 5px 10px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -17,7 +15,6 @@
 
 
 /* Header Style */
-
 .nav-conetent{
 
     width: 100%;
@@ -44,6 +41,7 @@
     align-items: center;
 }
 .nav-items li{
+    list-style-type: none;
     padding: 0px 15px;
 }
 .flw-btn{
@@ -63,52 +61,57 @@
     padding-right: 8px;
     color: red;
 }
-
-/* Header Responsive Style */
-/* For Mobile Views */
 @media only screen and (max-width: 600px) {
     header {
-            height: auto;
-            width: 100%;
-        }
+        height: auto;
+        width: 100%;
+    }
 
-    .nav-conetent{
+    .nav-conetent {
         flex-direction: column;
     }
-        .nav-items{
-            margin: 25px 0px;
-            flex-direction: column;
-        }
-        .nav-items li{
-            padding: 20px 0px;
-        }
+
+    .nav-items {
+        margin: 25px 0px;
+        flex-direction: column;
+    }
+
+    .nav-items li {
+        padding: 20px 0px;
+    }
 }
 
 /* Banner Part Style */
-.banner-content{
+section{
+    padding: 40px 0px;
+}
+.banner-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
 }
-.banner-tilte h2{
+
+.banner-tilte h2 {
     font-size: 46px;
     padding: 5px 0px;
     text-transform: uppercase;
 }
-.banner-tilte h1{
+
+.banner-tilte h1 {
     font-size: 64px;
     text-transform: uppercase;
     color: #F948B2;
     padding: 10px 0px;
 }
 
-.feturs-item{
+.feturs-item {
     padding: 15px 0px;
 }
 
-.btn-rgl{
-    text-transform: uppercase;    padding: 16px 26px;
+.btn-rgl {
+    text-transform: uppercase;
+    padding: 16px 26px;
     border: none;
     border-radius: 50px;
     margin: 0px 5px;
@@ -119,11 +122,51 @@
 
 /* Banner Responsive */
 @media only screen and (max-width: 600px) {
-    .banner-content{
+    .banner-content {
         flex-direction: column-reverse;
     }
+
     .banner-tilte {
         padding: 60px 0px;
     }
+}
 
+
+/* Style game part */
+
+.gamer-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamer-cover{
+    width: 60%;
+}
+.gamer-cover img{
+    width: 95%;
+}
+
+.gamer-des{
+    width: 40%;
+    text-align: end;
+}
+
+.gamer-des h1{
+    font-size: 36px;
+    padding: 10px 0px;
+}
+.gamer-des p{
+    padding-bottom: 20px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+.qoutation{
+    margin-top: 15px;
+}
+.qoutation h5{
+    font-size: 18px;
+    padding-bottom: 10px;
 }
