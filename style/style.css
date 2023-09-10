@@ -16,8 +16,7 @@
 }
 
 
-/* Navbar Style */
-
+/* Header Style */
 header{
     height: 90px;
     width: 100%;
@@ -33,15 +32,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .nav-logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .nav-logo h1{
     padding-left: 8px;
     font-size: 35px;
@@ -49,8 +45,6 @@ header{
 .nav-logo h1 span{
     color: #FF42A5;
 }
-
-
 .nav-items{
     display: flex;
     justify-content: space-around;
@@ -59,7 +53,6 @@ header{
 .nav-items li{
     padding: 0px 15px;
 }
-
 .flw-btn{
     display: flex;
     justify-content: center;
@@ -69,7 +62,6 @@ header{
     border-radius: 3px;
     cursor: pointer;
 }
-
 .flw-btn-icon{
     padding-left: 15px;
 }
@@ -77,4 +69,28 @@ header{
     font-size: 16px;
     padding-right: 8px;
     color: red;
+}
+
+/* Header Responsive Style */
+
+
+/* For Mobile Views */
+@media only screen and (max-width: 600px) {
+
+    header {
+            height: auto;
+            width: 100%;
+        }
+
+    .nav-conetent{
+        flex-direction: column;
+    }
+        .nav-items{
+            margin: 25px 0px;
+            flex-direction: column;
+        }
+        .nav-items li{
+            padding: 20px 0px;
+        }
+
 }
