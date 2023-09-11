@@ -23,16 +23,16 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav-logo{
+.logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-logo h1{
+.logo h1{
     padding-left: 8px;
     font-size: 35px;
 }
-.nav-logo h1 span{
+logo h1 span{
     color: #FF42A5;
 }
 .nav-items{
@@ -182,4 +182,37 @@ section{
     width: 100%;
     text-align: center;
    }
+}
+
+
+/* footer style  */
+footer{
+    color: white;
+    background-color: #0B0223;
+    padding: 40px 10px;
+    text-align: center;
+}
+.footer-short-link{
+    padding: 40px 0px;
+}
+.footer-short-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0px 25px;
+    line-height: 26px;
+}
+.footer-short-link a:hover{
+    color: #F948B2;
+}
+
+.social-list a i{
+    color: white;
+    padding: 0px 15px;
+    font-size: 30px;
+}
+
+.copyright{
+    font-size: 12px;
+    color: gainsboro;
 }
