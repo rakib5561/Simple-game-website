@@ -133,21 +133,18 @@ section{
 
 
 /* Style game part */
-
 .gamer-part{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .gamer-cover{
     width: 60%;
 }
 .gamer-cover img{
     width: 95%;
 }
-
 .gamer-des{
     width: 40%;
     text-align: end;
@@ -169,4 +166,20 @@ section{
 .qoutation h5{
     font-size: 18px;
     padding-bottom: 10px;
+}
+
+/* Banner Responsive */
+@media only screen and (max-width: 600px) {
+   .gamer-part{
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 5px;
+   }
+   .gamer-cover{
+    width: 100%;
+   }
+   .gamer-des{
+    width: 100%;
+    text-align: center;
+   }
 }
