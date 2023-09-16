@@ -7,8 +7,8 @@
     font-family: 'Work Sans', sans-serif;;
 }
 .container{
-    max-width: 1140px;
-    padding: 2px 40px;
+    max-width: 1280px;
+    padding: 2px 20px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -91,13 +91,14 @@ logo h1 span{
 
 /* Banner Part Style */
 section{
-    margin: 40px 0px;
+    padding: 50px 0px;
 }
 .banner-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    padding: 30px 0px;
 }
 
 .banner-tilte h2 {
@@ -127,6 +128,12 @@ section{
     color: white;
     cursor: pointer;
 }
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+}
 
 /* Banner Responsive */
 @media only screen and (max-width: 600px) {
@@ -146,6 +153,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 60px 0px;
 }
 .gamer-cover{
     width: 60%;
@@ -193,6 +201,76 @@ section{
    }
 }
 
+/* Online games part style */
+.online-games-wrapper{
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+.online-games-title{
+    text-align: center;
+    padding: 50px 5px;
+}
+.online-games-title h1{
+    font-size: 38px;
+    padding-bottom: 25px;
+}
+.online-games-title h1 span{
+    color: #F948B2;
+}
+.online-games-title p{
+    font-size: 15px;
+}
+.games-box{
+    width: 100%;
+    display: flex;
+    padding-bottom: 45px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.single-game-box{
+    width: 23%;
+    position: relative;
+}
+.single-game-box p{
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 0px 5px;
+    line-height: 23px;
+    text-align: left;
+}
+.single-game-box img{
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+}
+
+.watch-now{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    
+}
+
+.watch-now i{
+    color: white;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+.watch-now span h4{
+    color: #FF42A5;
+}
+.single-game-box img:hover{
+    width: 98%;
+    transition: 0.2s all ease-in-out;
+    border: 3px solid #FF42A5;
+}
+
+
+
+
 /* Careers part style */
 #careers-wrapper-part{
     width: 100%;
@@ -204,7 +282,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0px;   
+
 }
 .careers-contents{
     width: 50%;
@@ -238,11 +316,8 @@ section{
 }
 
 
-
 /* Games categorys list  */
-
 .games-categorys-list{
-
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-gap: 35px;
