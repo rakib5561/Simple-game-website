@@ -419,26 +419,19 @@ section{
 
 /* Online games part responsive  */
 @media only screen and (max-width: 600px) {
-
     .careers-wrapper {
         display: block;
         justify-content: center;
         align-items: center;
-
     }
     .careers-contents {
         width: 80%;
     }
-    
     .careers-img {
         width: 100%;
         padding-top: 60px;
     }
-       
 }
-
-
-
 /* Games categorys list  */
 .games-categorys-list{
     width: 100%;
@@ -451,7 +444,6 @@ section{
     justify-content: center;
     align-items: center;
 }
-
 .games-name-btn{
     font-weight: bold;
     display: flex;
@@ -463,19 +455,29 @@ section{
     padding: 0px 13px;
     margin: 15px 0px;
     border: none;
-
 }
 .games-name-btn img{
     width: 40px;
     padding: 8px 4px;
 }
-
 .games-name-btn:hover{
     color: #F948B2;
     border: 1px solid #F948B2;
 }
 
+/* Online games part responsive  */
+@media only screen and (max-width: 600px) {
+    .games-categorys-list {
+            width: 90%;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
 
+}
 
 /* footer style  */
 footer{
