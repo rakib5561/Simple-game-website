@@ -70,6 +70,12 @@ logo h1 span{
 }
 
 @media only screen and (max-width: 600px) {
+    .container {
+            max-width: 100%;
+            padding: 2px 10px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
     header {
         height: auto;
         width: 100%;
@@ -227,7 +233,6 @@ section{
     justify-content: space-between;
     cursor: pointer;
 }
-
 .single-game-box{
     width: 23%;
     position: relative;
@@ -249,7 +254,6 @@ section{
     position: absolute;
     top: 30%;
     left: 35%;
-    
 }
 .watch-now i{
     color: white;
@@ -264,47 +268,106 @@ section{
     transition: 0.2s all ease-in-out;
     border: 3px solid #FF42A5;
 }
-
 .poster-wraper{
     width: 100%;
     padding: 60px 5px;
     overflow: hidden;
 }
-
 .poster{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px 0px;
 }
-
 .poster-des{
     width: 30%;    
 }
-
 .poster-des h1{
     font-size: 42px;
     padding: 30px 0px;
 }
-
 .poster-des h1 span{
     color: #FF42A5;
 }
-
 .posterOne{
     text-align: end;
 }
 .posterTwo{
     text-align: start;
 }
-
 .poster-banner{
     width: 65%;
 }
-
 .poster-banner img{
     width: 75%;
     margin: 0 auto;
+}
+
+/* Online games part responsive  */
+@media only screen and (max-width: 600px) {
+    .online-games-wrapper{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+
+    }
+    .online-games-title{
+        width: 100%;
+        padding: 40px 0px;
+        
+    }
+    .online-games-title h1{
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+    .online-games-title p{
+        font-size: 14px;
+    }
+    .games-box {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .single-game-box {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px 0px;
+        }
+    
+        .poster-wraper {
+            width: 100%;
+            padding: 60px 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+    
+        .poster {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            padding: 20px 0px;
+        }
+        .poster-des{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px 40px;
+        }
+        .poster-des h1{
+            font-size: 28px;
+        }
+        .poster-banner{
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px 40px;
+        }
+    
 }
 
 /* Careers part style */
@@ -354,9 +417,29 @@ section{
     font-weight: 600;
 }
 
+/* Online games part responsive  */
+@media only screen and (max-width: 600px) {
+
+    .careers-wrapper {
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .careers-contents {
+        width: 80%;
+    }
+    
+    .careers-img {
+        width: 100%;
+        padding-top: 60px;
+    }
+       
+}
+
+
 
 /* Games categorys list  */
-
 .games-categorys-list{
     width: 100%;
     overflow: hidden;
